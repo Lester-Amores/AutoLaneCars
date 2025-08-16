@@ -2,15 +2,21 @@ import { useState } from "react";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import CarCard from "./car-card";
+import sedan from "@/assets/sedan.jpg";
+import sportcars from "@/assets/sportcars.jpg";
+import crossover from "@/assets/crossover.jpg";
+import suv from "@/assets/suv.jpg";
+import pickup from "@/assets/pickup.jpg";
+import evehicle from "@/assets/evehicle.jpg";
 
 const carTypes = [
-    { name: "Sedans", img: import.meta.env.BASE_URL + "sedan.jpg" },
-    { name: "Sports Cars", img: import.meta.env.BASE_URL + "sportcars.jpg" },
-    { name: "Crossovers", img: import.meta.env.BASE_URL + "crossover.jpg" },
-    { name: "SUVs", img: import.meta.env.BASE_URL + "suv.jpg" },
-    { name: "Pickup Trucks", img: import.meta.env.BASE_URL + "pickup.jpg" },
-    { name: "E-Vehicles", img: import.meta.env.BASE_URL + "evehicle.jpg" },
-  ];
+  { name: "Sedans", img: sedan },
+  { name: "Sports Cars", img: sportcars },
+  { name: "Crossovers", img: crossover },
+  { name: "SUVs", img: suv },
+  { name: "Pickup Trucks", img: pickup },
+  { name: "E-Vehicles", img: evehicle },
+];
 
 function CarCategories() {
     const [currentPage, setCurrentPage] = useState(0);

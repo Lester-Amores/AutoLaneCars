@@ -1,9 +1,12 @@
+import image2 from "@/assets/image2.jpg";
+
+
 function Hero() {
   return (
     <section
       id="home"
       className="h-screen flex flex-col items-center justify-center text-center px-4 text-white bg-cover bg-center relative"
-      style={{ backgroundImage: "url('/image2.jpg')" }}
+      style={{ backgroundImage: `url(${image2})` }}
     >
       <div className="relative z-10">
         <h1 className="text-5xl font-bold mb-4">Drive Your Dream</h1>
