@@ -4,13 +4,13 @@ import { useKeenSlider } from "keen-slider/react";
 import CarCard from "./car-card";
 
 const carTypes = [
-    { name: "Sedans", img: "/sedan.jpg" },
-    { name: "Sports Cars", img: "/sportcars.jpg" },
-    { name: "Crossovers", img: "/crossover.jpg" },
-    { name: "SUVs", img: "/suv.jpg" },
-    { name: "Pickup Trucks", img: "/pickup.jpg" },
-    { name: "E-Vehicles", img: "/evehicle.jpg" },
-];
+    { name: "Sedans", img: import.meta.env.BASE_URL + "sedan.jpg" },
+    { name: "Sports Cars", img: import.meta.env.BASE_URL + "sportcars.jpg" },
+    { name: "Crossovers", img: import.meta.env.BASE_URL + "crossover.jpg" },
+    { name: "SUVs", img: import.meta.env.BASE_URL + "suv.jpg" },
+    { name: "Pickup Trucks", img: import.meta.env.BASE_URL + "pickup.jpg" },
+    { name: "E-Vehicles", img: import.meta.env.BASE_URL + "evehicle.jpg" },
+  ];
 
 function CarCategories() {
     const [currentPage, setCurrentPage] = useState(0);
